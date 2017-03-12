@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  myfirstdotnetcorewebapplication:
+    image: myfirstdotnetcorewebapplication
+    build:
+      context: ./MyFirstDotNetCoreWebApplication
+      dockerfile: Dockerfile

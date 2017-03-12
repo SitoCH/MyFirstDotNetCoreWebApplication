@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  myfirstdotnetcorewebapplication:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"
