@@ -29,6 +29,7 @@ namespace MyFirstDotNetCoreWebApplication
         {
             // Add framework services.
             services.AddMvc();
+            services.Configure<EnvironmentConfig>(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,5 +57,14 @@ namespace MyFirstDotNetCoreWebApplication
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
+    }
+
+    public class EnvironmentConfig
+    {
+        public string Time { get; set; }
+
+        public string Weight { get; set; }
+
+        public string Height { get; set; }
     }
 }

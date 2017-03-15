@@ -4,5 +4,8 @@ services:
   myfirstdotnetcorewebapplication:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - Weight=3.8
+      - Time=12:15
+      - Height=45
     ports:
       - "80"
